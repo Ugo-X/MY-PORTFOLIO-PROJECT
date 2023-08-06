@@ -220,7 +220,7 @@ Navbar
 }
 
 .nav-center {
-  width: 100%;
+  width: 90vw;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -228,7 +228,6 @@ Navbar
 .nav-header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-left: 3rem;
   align-items: center;
 }
 .nav-btn {
@@ -243,7 +242,7 @@ Navbar
 
 @media screen and (min-width: 600px) {
   .nav {
-    background: var(--clr-primary-9);
+    background: white;
   }
 
   .nav-btn {
@@ -377,7 +376,7 @@ Hero
 
 #text{
   font-weight: bold;
-  color: var(--clr-primary-5);
+  color: linear ;
   text-transform: lowercase;
 }
 #cursor{
@@ -421,7 +420,7 @@ animation: load 4s ease 1;
 }
 
 .hero-icon{
-  color: brown;
+  color: white;
   font-weight: bold;
 }
 
@@ -430,6 +429,7 @@ animation: load 4s ease 1;
 #fdc830,
 #f37335)  ;
 color: white;
+cursor: pointer;
 }
 
 
@@ -437,7 +437,7 @@ color: white;
 .hero{
   padding-top: 1rem;
    position: relative;
-    background-color:var(--clr-primary-8);
+    background-color:#f8f3ee;
     z-index: 1;
     overflow-x: hidden;
     padding-top: 80px;
@@ -446,7 +446,6 @@ color: white;
 
 .hero-center{
   margin-top: -3rem;
- offset: 2px solid green;
 
 }
 
@@ -479,7 +478,7 @@ color: brown;
 
 @media screen and (min-width:600px) {
   .hero{
-    background: var(--clr-primary-9);
+    background: #f8f3ee;
   }
   
   .hero-center{
@@ -495,7 +494,6 @@ color: brown;
 } 
 
  .hero-info{
-  padding-left: 25px;
 transform: translateY(100px);
 } 
 
