@@ -438,9 +438,9 @@ animation: load 3s ease 1;
 
 .hero-social{
    position: absolute;
-    top: 65%;
+    top: 60%;
     left: 10px;
-    transform: translateY(-53%);
+    transform: translateY(-60%);
    
     border-radius: 50px;
 }
@@ -457,7 +457,7 @@ color: brown;
 }
 
 .hero-img .hero-pic img{
-  transform: translateY(-60px);
+  transform: translateY(-65px);
 }
 
 @media screen and (min-width:600px) {
