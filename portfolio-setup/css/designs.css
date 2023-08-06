@@ -360,9 +360,10 @@ Hero
 /* underline added to globals */
 
 
-#typewriter{
+#text{
   font-weight: bold;
   color: var(--clr-primary-5);
+  text-transform: lowercase;
 }
 #cursor{
   color:black ;
@@ -387,6 +388,9 @@ Hero
   letter-spacing: 0.1rem;
 
  
+}
+.hero-info-h4{
+  text-transform: lowercase;
 }
 
 .ugo{

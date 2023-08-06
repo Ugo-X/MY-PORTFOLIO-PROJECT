@@ -18,8 +18,6 @@ navBtn.addEventListener("click", function () {
 closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
 });
-// set year
-date.innerHTML = new Date().getFullYear();
 
 
 
@@ -27,9 +25,8 @@ date.innerHTML = new Date().getFullYear();
 
 const textDisplay = document.getElementById("text");
 const phrases = [
-  "Hello, my name is Ania.",
-  "I love to code.",
-  "I love to teach.",
+  "web developer",
+  "a ui/ux web designer.",
 ];
 let i = 0;
 let j = 0;
