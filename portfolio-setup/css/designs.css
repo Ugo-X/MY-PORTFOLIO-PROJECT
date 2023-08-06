@@ -5,8 +5,7 @@ Fonts
 */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Libre+Bodoni&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Libre+Bodoni&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Romanesco&display=swap');
 /*
 =============== 
 Variables
@@ -198,7 +197,8 @@ Navbar
 }
 
 .nav {
-  height: 5rem;
+ 
+  height: 4rem;
   background: var(--clr-white);
   padding: 1rem;
   display: grid;
@@ -230,7 +230,7 @@ Navbar
 
 @media screen and (min-width: 700px) {
   .nav {
-    background: var(--clr-primary-10);
+    background: var(--clr-white);
   }
 
   .nav-btn {
@@ -251,7 +251,16 @@ Navbar
     column-gap: 2rem;
   }
 }
-
+/* fixed nav-bar */
+.navbar-fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 2;
+  box-shadow: var(--dark-shadow);
+}
 /*
 =============== 
 Sidebar
@@ -262,14 +271,18 @@ Sidebar
   position: fixed;
   top: 0;
   left: 0;
-  width: 50%;
+  width: 60%;
   height: 100%;
-  background: black;
+  background: rgb(0, 0, 0);
   z-index: 4;
   display: grid;
   place-items: center;
   transition: var(--transition);
-  /* transform: translateX(-100%); */
+transform: translateX(-100%);
+}
+
+.show-sidebar{
+  transform: translate(0);
 }
 .sidebar-links{
 text-align: center;
@@ -277,17 +290,65 @@ text-align: center;
 
 .sidebar-links a{
   transition: var(--transition);
-  color: var(--clr-grey-5);
+  color:white;
   display: inline-block;
   margin-bottom: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-transform: capitalize;
 }
+
+.sidebar-links a:hover{
+color: var(--clr-primary-5);
+transform: translateX(20px);
+
+}
+
 .social-links {
-  text-align: center;
+ justify-items: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 0.5rem;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  width: 15rem;
+}
+
+
+.social-icon{
+  color: white;
+  transition: var(--transition);
+}
+
+.social-icon:hover{
+  color: var(--clr-primary-5);
+  transform: translateY(10px);
+}
+
+
+.logo-1{
+  color: white;
+}
+.link-icon{
+  color: white;
+  font-size: 1rem;
+  padding-right: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-btn{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 2rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.close-btn:hover{
+  color: var(--clr-primary-5);
 }
 
 
@@ -297,6 +358,41 @@ Hero
 ===============
 */
 /* underline added to globals */
+
+
+#typewriter{
+  font-weight: bold;
+  color: var(--clr-primary-5);
+}
+#cursor{
+  color:black ;
+  animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+  0%{
+    opacity: 100%;
+  }
+  50%{
+    opacity: 0%;
+  }
+}
+
+.hero-info p{
+  margin-top: 1rem;
+  color: black;
+  line-height: 1.8;
+  max-width: 25rem;
+ 
+  letter-spacing: 0.1rem;
+
+ 
+}
+
+.ugo{
+ font-family: 'Libre Bodoni', serif;
+  font-size: 1.3rem;
+}
 
 /*
 =============== 
