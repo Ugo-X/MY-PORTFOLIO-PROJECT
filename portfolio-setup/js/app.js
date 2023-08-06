@@ -19,15 +19,10 @@ closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
 });
 
-
-
 // typing animation
 
 const textDisplay = document.getElementById("text");
-const phrases = [
-  "web developer",
-  "a ui/ux web designer.",
-];
+const phrases = ["web developer", "a ui/ux web designer."];
 let i = 0;
 let j = 0;
 let currentPhrase = [];
@@ -67,7 +62,7 @@ function loop() {
   }
   const spedUp = Math.random() * (80 - 50) + 50;
   const normalSpeed = Math.random() * (300 - 200) + 200;
-  const time = isEnd ? 2000 : isDeleting ? spedUp : normalSpeed;
+  const time = isEnd ? 1500 : isDeleting ? spedUp : normalSpeed;
   setTimeout(loop, time);
 }
 
