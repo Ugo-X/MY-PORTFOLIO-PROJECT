@@ -376,7 +376,7 @@ Hero
 
 #text{
   font-weight: bold;
-  color: linear ;
+  color: #f58634;
   text-transform: lowercase;
 }
 #cursor{
@@ -393,7 +393,7 @@ Hero
   }
 }
 .hero-info p{
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   color: brown;
   line-height: 1.8;
   max-width: 25rem;
@@ -415,8 +415,8 @@ animation: load 4s ease 1;
 }
 
 .ugo{
- font-family: 'Libre Bodoni', serif;
-  font-size: 1.3rem;
+font-family: 'Poppins', sans-serif;
+  
 }
 
 .hero-icon{
@@ -546,6 +546,12 @@ transform: translateY(100px);
 .hero .underline{
   margin: 1.25rem 0;
 }
+
+.hero-info h3,h4,p{
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
 
 
 /*
