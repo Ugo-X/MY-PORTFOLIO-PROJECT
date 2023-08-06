@@ -398,6 +398,11 @@ Hero
   font-size: 1.3rem;
 }
 
+.hero-icon{
+  color: black;
+  font-weight: bold;
+}
+
 /*
 =============== 
 About
