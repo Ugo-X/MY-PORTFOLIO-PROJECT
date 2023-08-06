@@ -22,7 +22,7 @@ closeBtn.addEventListener("click", function () {
 // typing animation
 
 const textDisplay = document.getElementById("text");
-const phrases = ["web developer", "a ui/ux web designer."];
+const phrases = ["a web developer", "a ui/ux web designer."];
 let i = 0;
 let j = 0;
 let currentPhrase = [];
