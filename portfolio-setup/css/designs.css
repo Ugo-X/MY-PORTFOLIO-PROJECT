@@ -77,6 +77,8 @@ a {
 img:not(.nav-logo) {
   width: 100%;
   display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
 h1,
@@ -121,6 +123,7 @@ p {
   body {
     font-size: 1rem;
   }
+
   h1,
   h2,
   h3,
@@ -271,8 +274,8 @@ Sidebar
   position: fixed;
   top: 0;
   left: 0;
-  width: 60%;
-  height: 100%;
+  width: 100%;
+  height: 70%;
   background: rgb(0, 0, 0);
   z-index: 4;
   display: grid;
@@ -360,6 +363,8 @@ Hero
 /* underline added to globals */
 
 
+
+
 #text{
   font-weight: bold;
   color: var(--clr-primary-5);
@@ -378,17 +383,21 @@ Hero
     opacity: 0%;
   }
 }
-
 .hero-info p{
   margin-top: 1rem;
-  color: black;
+  color: brown;
   line-height: 1.8;
   max-width: 25rem;
- 
+ text-align: justify;
   letter-spacing: 0.1rem;
-
- 
+animation: load 3s ease 1;
 }
+@keyframes load {
+  0%{
+    opacity: 0;
+  }
+}
+
 .hero-info h4{
   text-transform: lowercase;
 }
@@ -399,9 +408,113 @@ Hero
 }
 
 .hero-icon{
-  color: black;
+  color: brown;
   font-weight: bold;
 }
+
+.hero-btn{
+  background:linear-gradient(
+#fdc830,
+#f37335)  ;
+}
+
+
+/* hero */
+.hero{
+  padding-top: 1rem;
+   position: relative;
+    background-color: var(--black-100);
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 80px;
+}
+
+.hero-center{
+  margin-top: -3rem;
+ offset: 2px solid green;
+}
+
+
+
+.hero-social{
+   position: absolute;
+    top: 65%;
+    left: 10px;
+    transform: translateY(-53%);
+   
+    border-radius: 50px;
+}
+.hero-social li a{
+  padding: 20px 15px;
+  display: block;
+  text-align: center;
+  font-size: 18px;
+color: brown;
+  transition: var(--transition);
+}
+.hero-social li a:hover{
+  color: black;
+}
+
+.hero-img .hero-pic img{
+  transform: translateY(-60px);
+}
+
+@media screen and (min-width:600px) {
+  .hero-center{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 2rem;
+  align-items: start;
+}
+
+.hero-img .hero-pic img{
+  height: 700px;
+  transform: translateY(-50px);
+}
+
+.hero-info{
+  padding-left: 25px;
+transform: translateY(100px);
+}
+
+.hero-social{
+  top: 35%;
+ 
+}
+
+.hero-img .hero-pic img{
+      position: relative;
+    width: 100%;
+    z-index: 789;
+}
+
+}
+
+@media screen and (min-width:700px) {
+  .header-hero-shape
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+}
+.header-hero-shape::before
+{
+    position: absolute;
+    content: '';
+    width: 1000%;
+    height: 100%;
+    background:linear-gradient(
+#fdc830,
+#f37335) ;
+    transform: skewX(20deg);
+    top: 0;
+    left: 0;
+}
+}
+
 
 /*
 =============== 
