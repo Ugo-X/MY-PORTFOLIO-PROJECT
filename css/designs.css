@@ -457,7 +457,7 @@ color: brown;
 }
 
 .hero-img .hero-pic img{
-  transform: translateY(-65px);
+  transform: translateY(-58px);
 }
 
 @media screen and (min-width:600px) {
