@@ -446,8 +446,16 @@ cursor: pointer;
 
 .hero-center{
   margin-top: -3rem;
-
+  display: grid;
 }
+.hero-info{
+  order: 2;
+}
+.hero-img{
+  order: 1;
+}
+
+
 
 
 
