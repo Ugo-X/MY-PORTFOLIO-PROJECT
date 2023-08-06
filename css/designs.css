@@ -456,6 +456,16 @@ margin-bottom: 3rem;
   order: 1;
 }
 
+.hero-pic{
+  display: none;
+}
+
+.hero-pic-1{
+    height: 34em;
+
+}
+
+
 
 
 
@@ -485,7 +495,19 @@ color: brown;
   transform: translateY(-55px);
 }
 
-@media screen and (min-width:600px) {
+@media screen and (min-width:700px) {
+  .hero-info{
+  order: 1;
+}
+.hero-img{
+  order: 2;
+}
+.hero-pic{
+  display: initial;
+}
+.hero-pic-1{
+  display: none;
+}
   .hero{
     background: #f8f3ee;
   }
