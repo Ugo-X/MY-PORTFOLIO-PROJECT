@@ -597,15 +597,19 @@ About
 }
 
 .about-img img{
-  height: 32rem;
+  height: 30rem;
   object-fit: cover;
-  width: 80vw;
+  width: 20vw;
   margin: 0 auto;
-  border-radius: 2rem;
-  transform: skewX(-2deg);
+  border-radius: 1rem;
+  transform: skewX(-1deg);
 }
 .about-info h2{
   color: black;
+}
+.about-info p{
+  color: brown;
+  text-align: justify;
 }
 .underline{
   margin-left: 0;
