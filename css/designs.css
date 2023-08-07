@@ -41,6 +41,7 @@ Variables
   --clr-white: #fff;
   --ff-primary: "Roboto", sans-serif;
   --ff-secondary: "Open Sans", sans-serif;
+  --ff-tetiary:'Poppins', sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -590,6 +591,28 @@ About
 ===============
 */
 /* section title added to globals */
+
+.about-info{
+  margin-top: 2rem;
+}
+
+.about-img img{
+  height: 32rem;
+  object-fit: cover;
+  width: 80vw;
+  margin: 0 auto;
+  border-radius: 2rem;
+  transform: skewX(-2deg);
+}
+.about-info h2{
+  color: black;
+}
+.underline{
+  margin-left: 0;
+  margin-top: -rem;
+  margin-bottom: 2rem;
+}
+
 
 /*
 =============== 
