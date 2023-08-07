@@ -216,7 +216,7 @@ Navbar
 
 .nav {
   height: 4rem;
-  background: #f8f3ee;
+  background: white;
   padding: 1rem;
   display: grid;
   align-items: center;
@@ -431,7 +431,7 @@ Hero
 .hero {
   padding-top: 1rem;
   position: relative;
-  background-color:  #f8f3ee;
+  background-color: white;
   z-index: 1;
   overflow-x: hidden;
   padding-top: 80px;
