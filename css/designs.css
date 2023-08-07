@@ -436,6 +436,7 @@ Hero
   overflow-x: hidden;
   padding-top: 80px;
   min-height: calc(100vh - 4rem);
+
 }
 
 .hero-center {
@@ -577,8 +578,8 @@ About
 }
 .about-center {
   display: grid;
-  gap: 3rem 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+   gap: 3rem 2rem; 
+
 }
 .about-img img {
   
@@ -586,9 +587,8 @@ About
   border-radius: 1rem;
 }
 .about-img {
-  justify-self: center;
-  width:95vw ;
-  margin: 0 auto;
+justify-self: center;
+
 }
 
 .about-info h2 {
@@ -598,11 +598,19 @@ About
   color: brown;
   text-align: justify;
   letter-spacing: 0.1rem;
+  line-height:2;
+  font-weight: lighter;
 }
 
 @media screen and (min-width:500px) {
   .about-img{
     width: 25rem;
+  }
+}
+
+@media screen and (min-width:800px) {
+  .about-center{
+    grid-template-columns: repeat(2,1fr);
   }
 }
 
