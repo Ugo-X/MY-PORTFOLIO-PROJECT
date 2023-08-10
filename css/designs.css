@@ -427,7 +427,6 @@ Hero
 }
 
 .hero-icon {
-  color: black;
   font-weight: bold;
 }
 
@@ -709,7 +708,8 @@ Services
 .service-icon {
   font-size: 2rem;
   margin-bottom: 1.5rem;
- color-mix:(in srgb, brown 20%, white);
+  color: var(--clr-grey-2);
+ 
 }
 
 .services .underline {
@@ -737,6 +737,9 @@ Services
 }
 .service:hover .service-icon{
   color: white;
+}
+.service:hover h4{
+color: white;
 }
 
 @media screen and (min-width: 675px) {
