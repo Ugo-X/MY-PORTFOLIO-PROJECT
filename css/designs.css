@@ -139,7 +139,7 @@ p {
 
 .btn {
   text-transform: uppercase;
-  background: var(--clr-grey-6);
+  background: var(--clr-grey-1);
   color: var(--clr-white);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
@@ -195,7 +195,7 @@ Navbar
 ===============
 */
 .logo {
-  font-family: "Libre Bodoni", serif;
+  font-family: var(--ff-tetiary);
   color: black;
   font-size: 1.8rem;
 }
@@ -365,7 +365,7 @@ Sidebar
 }
 
 .close-btn:hover {
-  color: var(--clr-primary-5);
+  color: var(--clr-grey-6);
 }
 
 /*
@@ -498,7 +498,8 @@ color: white;
   transition: var(--transition);
 }
 .hero-social li a:hover {
-  color: black;
+  color: var(--clr-grey-5);
+  transform: translateY(-10px);
 }
 
 .hero-img .hero-pic img {
@@ -560,7 +561,7 @@ color: white;
     content: "";
     width: 1000%;
     height: 100%;
-    background: linear-gradient(#fdc830, #f37335);
+    background: var(--clr-grey-9);
     transform: skewX(20deg);
     top: 0;
     left: 0;
@@ -577,7 +578,7 @@ color: white;
   }
 
   .hero-btn{
-    background:linear-gradient(#fdc830, #f37335); 
+    background: var(--clr-grey-1); 
     color: white;
   }
   .hero-icon{
@@ -654,8 +655,8 @@ About
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 3px solid black;
-    background: rgba(0, 0, 0, 0.988);
+    border: 3px solid var(--clr-grey-6);
+    background:white ;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     top: 2rem;
     right: -2rem;
@@ -666,9 +667,7 @@ About
   }
 }
 
-.about-img:hover {
-  transform: rotatey(180deg);
-}
+
 
 .about-img:hover::before {
   top: 0;
@@ -700,7 +699,7 @@ Services
   border-radius: var(--radius);
   transition: var(--transition);
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr ;
   grid-template-rows: auto auto auto 1fr;
   box-shadow: 10px 10px 1px 0px rgba(0, 0, 0, 0.5);
 }
