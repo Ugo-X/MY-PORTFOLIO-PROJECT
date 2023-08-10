@@ -240,7 +240,7 @@ Navbar
   background: none;
   border: none;
   font-size: 2rem;
-  color: var(--clr-primary-5);
+  color: black
   font-weight: bolder;
   cursor: pointer;
   justify-self: end;
@@ -688,7 +688,7 @@ Services
 .service-icon {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: var(--clr-primary-5);
+ color-mix:(in srgb, brown 20%, white);
 }
 
 .services .underline {
