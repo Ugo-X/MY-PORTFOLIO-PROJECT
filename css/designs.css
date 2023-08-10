@@ -91,6 +91,8 @@ h4 {
   line-height: 1.25;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
+  color: var(--clr-grey-2);
+ 
 }
 h1 {
   font-size: 3rem;
@@ -106,7 +108,7 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(black);
+  color: var(--clr-grey-2);
   text-align: justify;
 }
 @media screen and (min-width: 800px) {
@@ -137,7 +139,7 @@ p {
 
 .btn {
   text-transform: uppercase;
-  background: black;
+  background: var(--clr-grey-6);
   color: var(--clr-white);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
@@ -148,12 +150,13 @@ p {
   font-size: 0.875rem;
   border: 2px solid transparent;
   cursor: pointer;
-  box-shadow: 0 1px 5px rgba(9, 9, 9, 0.965);
+ box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.375);
   border-radius: var(--radius);
+  
 }
 .btn:hover {
-  background: white;
-  color: black;
+  background:black;
+  color: white;
   transform: translate(7px);
 }
 /* section */
@@ -164,7 +167,6 @@ p {
 .section-title {
   margin-bottom: 3rem;
   text-align: center;
-  color: black;
 }
 
 .section-center {
@@ -198,7 +200,7 @@ Navbar
   font-size: 1.8rem;
 }
 .x-logo {
-  color: var(--clr-primary-5);
+  color: var(--clr-grey-4);
 }
 
 .nav-links {
@@ -431,7 +433,7 @@ Hero
 
 .hero-btn {
   background: white;
-  color: black;
+  color: var(--clr-grey-2);
   cursor: pointer;
   margin-bottom: 3rem;
 }
@@ -493,7 +495,7 @@ color: white;
   display: block;
   text-align: center;
   font-size: 18px;
-  color: brown;
+  color: black;
   transition: var(--transition);
 }
 .hero-social li a:hover {
@@ -622,11 +624,9 @@ About
   justify-self: center;
 }
 
-.about-info h2 {
-  color: black;
-}
+
 .about-info p {
-  color: black;
+
   text-align: justify;
   letter-spacing: 0.1rem;
   line-height: 2;
@@ -720,7 +720,7 @@ Services
 .service p {
   margin-top: 1.5rem;
   transition: var(--transition);
-  color: black;
+ 
 }
 
 .service:hover {
