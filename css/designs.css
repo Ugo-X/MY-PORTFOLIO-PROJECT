@@ -440,7 +440,7 @@ Hero
 .hero {
   padding-top: 1rem;
   position: relative;
-  background:linear-gradient(to bottom,rgba(59, 59, 59, 0.419),rgba(0, 0, 0, 0.9)),url(../images/about-img.jpg)center/cover fixed;
+  background:linear-gradient(to bottom,rgba(59, 59, 59, 0.556),rgb(0, 0, 0)),url(../images/about-img.jpg)center/cover fixed;
   z-index: 1;
   overflow-x: hidden;
   padding-top: 80px;
