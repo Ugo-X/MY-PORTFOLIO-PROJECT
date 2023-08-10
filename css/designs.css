@@ -425,13 +425,13 @@ Hero
 }
 
 .hero-icon {
-  color: white;
+  color: black;
   font-weight: bold;
 }
 
 .hero-btn {
-  background: linear-gradient(#fdc830, #f37335);
-  color: white;
+  background: white;
+  color: black;
   cursor: pointer;
   margin-bottom: 3rem;
 }
@@ -688,7 +688,7 @@ Services
 .service-icon {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: black;
+  color: var(--clr-primary-5);
 }
 
 .services .underline {
