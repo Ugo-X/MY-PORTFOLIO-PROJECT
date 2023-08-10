@@ -435,6 +435,9 @@ Hero
   cursor: pointer;
   margin-bottom: 3rem;
 }
+.hero-btn:hover .hero-icon{
+color: white;
+}
 
 /* hero */
 .hero {
@@ -566,6 +569,17 @@ Hero
   }
   .hero-info p {
     color: black;
+  }
+
+  .hero-btn{
+    background:linear-gradient(#fdc830, #f37335); 
+    color: white;
+  }
+  .hero-icon{
+    color: white;
+  }
+  .hero-btn:hover .hero-icon{
+    color: white;
   }
 }
 
