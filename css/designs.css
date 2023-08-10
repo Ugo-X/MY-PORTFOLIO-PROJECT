@@ -450,6 +450,9 @@ Hero
   align-items: center;
 }
 
+.hero .underline{
+  background: white;
+}
 .hero-center {
   margin-top: -3rem;
   display: grid;
