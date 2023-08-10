@@ -436,6 +436,8 @@ Hero
   overflow-x: hidden;
   padding-top: 80px;
   min-height: calc(100vh - 4rem);
+  display: grid;
+align-items: center;
 
 }
 
