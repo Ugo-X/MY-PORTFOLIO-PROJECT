@@ -106,7 +106,8 @@ h4 {
 }
 p {
   margin-bottom: 1.25rem;
-  color: var(--clr-grey-5);
+  color: var(black);
+  text-align: justify;
 }
 @media screen and (min-width: 800px) {
   h1 {
@@ -163,6 +164,7 @@ p {
 .section-title {
   margin-bottom: 3rem;
   text-align: center;
+  color: black;
 }
 
 .section-center {
@@ -377,7 +379,7 @@ Hero
   text-transform: lowercase;
 }
 #cursor {
-  color: black;
+  color: white;
   animation: blink 1.5s linear infinite;
 }
 
@@ -440,7 +442,7 @@ Hero
 .hero {
   padding-top: 1rem;
   position: relative;
-  background:linear-gradient(to bottom,rgba(59, 59, 59, 0.703),rgb(0, 0, 0)),url(../images/about-img-4.jpg)center/cover fixed;
+  background:linear-gradient(to bottom,rgba(59, 59, 59, 0.724),rgb(0, 0, 0)),url(../images/about-img-4.jpg)center/cover fixed;
   z-index: 1;
   overflow-x: hidden;
   padding-top: 80px;
@@ -509,7 +511,7 @@ align-items: center;
     display: none;
   }
   .hero {
-    background:#f8f3ee;
+    background:white;
   }
 
   .hero-center {
@@ -564,7 +566,7 @@ align-items: center;
     color: black;
   }
   .hero-info p{
-    color: brown;
+    color:black ;
   }
 
 }
@@ -613,11 +615,11 @@ justify-self: center;
   color: black;
 }
 .about-info p {
-  color: brown;
+  color: black;
   text-align: justify;
   letter-spacing: 0.1rem;
   line-height:2;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 @media screen and (min-width:500px) {
@@ -642,7 +644,7 @@ justify-self: center;
     position: absolute;
     width: 100%;
     height: 100%;
-    border: 3px solid var(--clr-white);
+    border: 3px solid black;
     background: rgba(0, 0, 0, 0.988);
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
     top: 2rem;
@@ -674,10 +676,67 @@ Services
 */
 .services{
   background: var(--clr-grey-10);
+padding-top: 5rem;
+padding-bottom: 5rem;
 }
 
-@media screen and (min-width:) {
-  
+.service{
+  background: white;
+  padding: 3rem 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-family: var(--ff-tetiary);
+  border-radius: var(--radius);
+  transition: var(--transition);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto 1fr;
+}
+
+.service-icon{
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.services .underline{
+ height: 0.12rem;
+ width: 3rem;
+ transition: var(--transition);
+}
+.service p{
+margin-top: 1.5rem;
+transition: var(--transition);
+color: black;
+}
+
+
+.service:hover{
+  color: white;
+  background: black;
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+.service:hover  p{
+  color: white;
+}
+.service:hover  .underline{
+  background: white;
+}
+
+
+@media screen and (min-width:675px) {
+  .services-center{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1rem;
+  }
+}
+@media screen and (min-width:992px) {
+  .services-center{
+    grid-template-columns: repeat(3,1fr);
+    
+  }
 }
 
 /*
