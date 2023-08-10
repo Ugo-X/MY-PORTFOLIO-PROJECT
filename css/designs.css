@@ -679,6 +679,7 @@ Services
   font-family: var(--ff-tetiary);
   border-radius: var(--radius);
   transition: var(--transition);
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto 1fr;
   box-shadow: 10px 10px 1px 0px rgba(0, 0, 0, 0.5);
