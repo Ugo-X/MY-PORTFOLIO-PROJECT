@@ -391,13 +391,21 @@ Hero
 }
 .hero-info p {
   margin-top: 1.5rem;
-  color: brown;
+  color: white;
   line-height: 1.8;
   max-width: 25rem;
   text-align: justify;
   letter-spacing: 0.1rem;
   animation: load 4s ease 1;
+   font-family: "Poppins", sans-serif;
 }
+.hero-info h3{
+  color: white;
+   font-family: "Poppins", sans-serif;
+}
+
+
+
 @keyframes load {
   0% {
     opacity: 0;
@@ -409,6 +417,7 @@ Hero
 
 .hero-info h4 {
   text-transform: lowercase;
+  color: white;
 }
 
 .ugo {
@@ -431,7 +440,7 @@ Hero
 .hero {
   padding-top: 1rem;
   position: relative;
-  background-color: white;
+  background:linear-gradient(to bottom,rgba(59, 59, 59, 0.419),rgba(0, 0, 0, 0.9)),url(../images/about-img.jpg)center/cover fixed;
   z-index: 1;
   overflow-x: hidden;
   padding-top: 80px;
@@ -486,6 +495,7 @@ align-items: center;
 }
 
 @media screen and (min-width: 700px) {
+
   .hero-info {
     order: 1;
   }
@@ -546,6 +556,17 @@ align-items: center;
     top: 0;
     left: 0;
   }
+
+  .hero-info h3 {
+    color: black;
+  }
+  .hero-info h4{
+    color: black;
+  }
+  .hero-info p{
+    color: brown;
+  }
+
 }
 
 @media screen and (min-width: 1250px) {
@@ -558,12 +579,7 @@ align-items: center;
   margin: 1.25rem 0;
 }
 
-.hero-info h3,
-h4,
-p {
-  font-family: "Poppins", sans-serif;
-  color: black;
-}
+
 
 /*
 =============== 
