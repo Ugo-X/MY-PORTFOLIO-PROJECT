@@ -137,7 +137,7 @@ p {
 
 .btn {
   text-transform: uppercase;
-  background: linear-gradient(#fdc830, #f37335);
+  background: black;
   color: var(--clr-white);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
@@ -148,12 +148,12 @@ p {
   font-size: 0.875rem;
   border: 2px solid transparent;
   cursor: pointer;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 5px rgba(9, 9, 9, 0.965);
   border-radius: var(--radius);
 }
 .btn:hover {
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   transform: translate(7px);
 }
 /* section */
@@ -179,9 +179,9 @@ p {
 }
 /* underline/overline class */
 .underline {
-  width: 6rem;
+  width: 5rem;
   height: 0.2rem;
-  background: linear-gradient(#fdc830, #f37335);
+  background:black;
   margin-bottom: 1.25rem;
   margin: 0 auto;
 }
@@ -434,6 +434,10 @@ Hero
   color: black;
   cursor: pointer;
   margin-bottom: 3rem;
+}
+.hero-btn:hover{
+background: black;
+color: white;
 }
 .hero-btn:hover .hero-icon{
 color: white;
