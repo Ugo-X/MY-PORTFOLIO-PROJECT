@@ -592,6 +592,7 @@ About
 
 .about-title {
   text-align: left;
+  text-shadow: -1px -5px 6px rgba(0,0,0,1);
 }
 .about-title .underline {
   margin-left: 0;
@@ -679,6 +680,9 @@ Services
 padding-top: 5rem;
 padding-bottom: 5rem;
 }
+.services h2{
+  text-shadow: -1px -5px 6px rgba(0,0,0,1);
+}
 
 .service{
   background: white;
@@ -690,6 +694,7 @@ padding-bottom: 5rem;
   transition: var(--transition);
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto 1fr;
+     box-shadow: 10px 10px 1px 0px rgba(0, 0, 0, 0.5);
 }
 
 .service-icon{
@@ -713,7 +718,7 @@ color: black;
 .service:hover{
   color: white;
   background: black;
-      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.85);
 
 }
 
