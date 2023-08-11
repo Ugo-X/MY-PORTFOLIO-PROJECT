@@ -363,8 +363,8 @@ Sidebar
 
 .close-btn {
   position: absolute;
-  top: 1rem;
-  left: 1rem;
+  top: 4.2rem;
+  right: 1rem;
   background: transparent;
   color: white;
   border: none;
@@ -386,7 +386,7 @@ Hero
 
 #text {
   font-weight: bold;
-  color: #f58634;
+  color: var(--clr-white);
   text-transform: lowercase;
 }
 #cursor {
@@ -426,8 +426,24 @@ Hero
   }
 }
 
+.hero-icons{
+  display: grid;
+  grid-template-columns: repeat(3,70px);
+}
+
+.hero-icon{
+  color: white;
+  font-size: 1.5rem;
+ transition: var(--transition);
+  
+}
+
+.hero-icon:hover{
+  color: var(--clr-grey-6) ;
+   transform: translateY(-10px);
+}
+
 .hero-info h4 {
-  text-transform: lowercase;
   color: white;
 }
 
@@ -512,6 +528,10 @@ color: white;
 
 
 @media screen and (min-width: 950px) {
+  .hero-icons{
+    display: none;
+  }
+  
   .hero-info {
     order: 1;
   }
@@ -612,6 +632,10 @@ About
 ===============
 */
 /* section title added to globals */
+.about{
+  margin-top: -4rem;
+}
+
 
 .about-title {
   text-align: left;
