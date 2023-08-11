@@ -758,6 +758,127 @@ Projects
 ===============
 */
 
+.projects-text{
+  width: 85vw;
+  max-width: 30rem;
+  margin: 2rem auto;
+  text-align: center;
+  line-height: 2.0;
+}
+
+.project{
+  position: relative;
+  background:black;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+}
+
+.project-info{
+  text-align: center;
+  color: white;
+   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); 
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.project-info h4{
+  color: white;
+  line-height: 2.0;
+}
+.project-info p{
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  line-height: 2.0;
+}
+
+.project:hover .project-info{
+  opacity: 1;
+}
+
+.project-img{
+  transition: var(--transition);
+  border-radius: var(--radius);
+  max-height: 15rem;
+}
+
+.project:hover .project-img{
+  opacity: 0.2;
+}
+
+.project::after{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+transform: translate(-50%,-50%);
+height: 100%;
+width: 100%;
+border: 3px solid white;
+border-radius: var(--radius);
+transition: var(--transition);
+opacity: 0;
+}
+
+
+.project:hover.project::after{
+opacity: 1;
+transform: scale(0.8);
+}
+
+
+@media screen and (min-width:650px){
+  .projects-center{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+  }
+}
+@media screen and (min-width:992px){
+  .projects-center{
+    grid-template-columns: repeat(3,1fr);
+  
+  }
+}
+@media screen and (min-width:1170px){
+  .projects-center{
+  grid-template-rows: repeat(2,200px);
+  gap: 1.5rem;
+   grid-template-areas: 
+  "a b b  "
+  "a c d"
+  ;
+  }
+
+   .project-4-img{
+    max-height: 28rem;
+  } 
+
+  .project-img{
+
+    height: 100%;
+  }
+  .project{
+
+    height: 100%;
+  }
+ 
+  .project-1{
+    grid-area: d;
+  }
+  .project-2{
+    grid-area: c;
+  }
+  .project-3{
+    grid-area: b;
+  }
+  .project-4{
+    grid-area: a;
+  }
+}
 /*
 =============== 
 Connect
