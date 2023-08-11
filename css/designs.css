@@ -814,7 +814,7 @@ content: "";
 position: absolute;
 top: 0;
 left: 0;
-transform: translate(-50%,-50%);
+
 height: 100%;
 width: 100%;
 border: 3px solid white;
@@ -827,7 +827,7 @@ opacity: 0;
 .project:hover.project::after{
 opacity: 1;
 transform: scale(0.8);
-}
+} 
 
 
 @media screen and (min-width:650px){
@@ -884,6 +884,52 @@ transform: scale(0.8);
 Connect
 ===============
 */
+
+.connect{
+  min-height:40vh ;
+  position: relative;
+  padding: 10rem 0 5rem 0;
+  margin:5rem  0;
+}
+
+.video-container{
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+object-fit: cover;
+z-index: -2;
+}
+.connect::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background:black ;
+opacity: 0.6;
+z-index: -1;
+}
+
+.vid-banner{
+  background: rgba(255, 252, 252, 0.718);
+  padding: 3rem 5rem 12rem 5rem;
+  text-align: center;
+  opacity: 0.9;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+
+}
+.video-text{
+  max-width: 30rem;
+}
+.connect{
+  display: grid;
+  place-items: center;
+clip-path: polygon(50% 2%, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+}
+
 
 /*
 =============== 
