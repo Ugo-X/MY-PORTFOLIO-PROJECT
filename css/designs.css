@@ -794,6 +794,9 @@ Services
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
+.services h4{
+  color:var(--clr-grey-2) ;
+}
 .service p {
   margin-top: 1.5rem;
   -webkit-transition: var(--transition);
@@ -882,6 +885,10 @@ Projects
 .project:hover .project-info {
   opacity: 1;
 }
+
+
+
+
 
 .project-img {
   -webkit-transition: var(--transition);
