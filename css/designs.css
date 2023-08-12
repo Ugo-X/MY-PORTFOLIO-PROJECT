@@ -1240,6 +1240,10 @@ Blog
   background: var(--clr-grey-10);
 }
 
+.blogs h4{
+  color: var(--clr-grey-2);
+}
+
 .card {
   height: 25rem;
   position: relative;
