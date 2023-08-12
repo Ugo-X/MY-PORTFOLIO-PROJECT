@@ -1364,8 +1364,12 @@ contact me page
         color: white;
       }
 
+    
+
       .contact-me h3,h4{
         color: white;
+        font-weight: bolder;
+        margin-bottom: 1.5rem;
       }
 
       .contact-me h2{
