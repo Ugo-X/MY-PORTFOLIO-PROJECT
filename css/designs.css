@@ -307,7 +307,7 @@ Sidebar
   width: 100%;
   height: 100%;
   background: rgb(0, 0, 0);
-  z-index: 4;
+  z-index: 1500;
   display: grid;
   place-items: center;
   -webkit-transition: var(--transition);
@@ -376,7 +376,7 @@ Sidebar
 
 .close-btn {
   position: absolute;
-  top: 4.2rem;
+  top: 1rem;
   right: 1rem;
   background: transparent;
   color: white;
@@ -1344,9 +1344,46 @@ Footer
 }
 /*
 =============== 
-Single Page
+contact me page
 ===============
 */
+    .contact-me {
+        min-height: 100vh;
+        background: linear-gradient( to top,rgba(18, 48, 132, 0.821),rgba(0, 0, 0, 0.869)) ,url(../images/Big-Screen-background-img-8.jpg);
+      }
+
+      .contact-me-center{
+        display: grid;
+        place-items: center;
+        text-align: center;
+        gap: 2rem;
+      }
+      .contact-me .footer-icons .hero-icon{
+        margin-top: 1rem;
+        color: var(--clr-grey-1);
+        color: white;
+      }
+
+      .contact-me h3,h4{
+        color: white;
+      }
+
+      .contact-me h2{
+        padding-top: 2rem;
+        color: white;
+      }
+      .contact-underline{
+       background: white;
+      }
+
+
+
+
+      @media screen  and (min-width:700px){
+        .contact-me-center{
+          grid-template-columns: repeat(2,1fr);
+        }
+      }
 
 /*
 =============== 
