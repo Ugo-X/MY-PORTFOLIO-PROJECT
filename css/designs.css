@@ -1360,7 +1360,7 @@ contact me page
 ===============
 */
 .contact-me {
-  min-height: 100vh;
+  min-height:100vh ;
   background: linear-gradient(
       to top,
       rgba(18, 48, 132, 0.821),
