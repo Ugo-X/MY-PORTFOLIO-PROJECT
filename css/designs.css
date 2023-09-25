@@ -521,7 +521,7 @@ Hero
   z-index: 1;
   overflow-x: hidden;
   padding-top: 80px;
-  min-height: calc(100vh - 4rem);
+  min-height: calc(85vh - 4rem);
   display: grid;
   -webkit-box-align: center;
   align-items: center;
@@ -778,7 +778,7 @@ Services
   transition: var(--transition);
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto 1fr;
+  grid-template-rows: auto auto auto auto 1fr;
   box-shadow: 10px 10px 1px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -835,6 +835,30 @@ Services
   .services-center {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.service-text {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.show-text .service-text {
+  height: auto;
+}
+
+.more {
+  display: block;
+  background: transparent;
+  border: transparent;
+  margin-top: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--clr-grey-2);
+}
+
+.more:hover {
+  color: var(--clr-white);
 }
 
 /*
@@ -1360,7 +1384,7 @@ contact me page
 ===============
 */
 .contact-me {
-  min-height:100vh ;
+  min-height: 100vh;
   background: linear-gradient(
       to top,
       rgba(18, 48, 132, 0.821),
