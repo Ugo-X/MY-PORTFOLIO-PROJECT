@@ -7,7 +7,7 @@ const btns = document.querySelectorAll('.more')
 const services = document.querySelectorAll('.service')
 // add fixed class to navbar
 window.addEventListener("scroll", function () {
-  if (window.pageYOffset > 80) {
+  if (window.pageYOffset > 100) {
     navbar.classList.add("navbar-fixed");
   } else {
     navbar.classList.remove("navbar-fixed");
@@ -45,6 +45,30 @@ services.forEach(function(item){
 service.classList.toggle('show-text')
 
  })
+})
+
+// back to top btn
+const topBtn = document.querySelector('.top')
+
+window.addEventListener('scroll', function(){
+  const pageHeight = window.pageYOffset
+ if (pageHeight > 1500) {
+  topBtn.classList.add('show-btn')
+ }
+ else{
+  topBtn.classList.remove('show-btn')
+ }
+})
+
+topBtn.addEventListener('click', function(evt){
+  evt.preventDefault()
+  const id = evt.currentTarget.getAttribute('href').slice(1)
+  const element = document.getElementById(id)
+  let position = element.offsetTop
+  scrollTo({
+    left:0,
+    top:position,
+  })
 })
 
 
