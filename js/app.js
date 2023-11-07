@@ -3,8 +3,8 @@ const navBtn = document.querySelector("#nav-btn");
 const closeBtn = document.querySelector("#close-btn");
 const sidebar = document.querySelector("#sidebar");
 const date = document.querySelector("#date");
-const btns = document.querySelectorAll('.more')
-const services = document.querySelectorAll('.service')
+const btns = document.querySelectorAll(".more");
+const services = document.querySelectorAll(".service");
 // add fixed class to navbar
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > 100) {
@@ -32,45 +32,42 @@ date.innerHTML = new Date().getFullYear();
 // })
 // so the idea behind this is to loop over all the service articles and then by using the forEach method, we can decide what happens to each individual service article class
 // then once we have access to this individual item  amongst  our services, we can select an element without using the document. since the element we are looking for is within the service so we replace the document with service, since we are looking for the item within the service article.
-services.forEach(function(service){
- const btn = service.querySelector('.more')
- btn.addEventListener('click', function(){
-  // so when we click on this btn within the service article, the individual service should toggle the class show-text i.e remove the class show-text if it exists already or add it if it doesnt exist already.
-services.forEach(function(item){
-  if(item !== service){
-    item.classList.remove('show-text')
-  }
-})
+services.forEach(function (service) {
+  const btn = service.querySelector(".more");
+  btn.addEventListener("click", function () {
+    // so when we click on this btn within the service article, the individual service should toggle the class show-text i.e remove the class show-text if it exists already or add it if it doesnt exist already.
+    services.forEach(function (item) {
+      if (item !== service) {
+        item.classList.remove("show-text");
+      }
+    });
 
-service.classList.toggle('show-text')
-
- })
-})
+    service.classList.toggle("show-text");
+  });
+});
 
 // back to top btn
-const topBtn = document.querySelector('.top')
+const topBtn = document.querySelector(".top");
 
-window.addEventListener('scroll', function(){
-  const pageHeight = window.pageYOffset
- if (pageHeight > 1500) {
-  topBtn.classList.add('show-btn')
- }
- else{
-  topBtn.classList.remove('show-btn')
- }
-})
+window.addEventListener("scroll", function () {
+  const pageHeight = window.pageYOffset;
+  if (pageHeight > 1500) {
+    topBtn.classList.add("show-btn");
+  } else {
+    topBtn.classList.remove("show-btn");
+  }
+});
 
-topBtn.addEventListener('click', function(evt){
-  evt.preventDefault()
-  const id = evt.currentTarget.getAttribute('href').slice(1)
-  const element = document.getElementById(id)
-  let position = element.offsetTop
+topBtn.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  const id = evt.currentTarget.getAttribute("href").slice(1);
+  const element = document.getElementById(id);
+  let position = element.offsetTop;
   scrollTo({
-    left:0,
-    top:position,
-  })
-})
-
+    left: 0,
+    top: position,
+  });
+});
 
 // typing animation
 

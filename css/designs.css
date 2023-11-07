@@ -892,9 +892,12 @@ Projects
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  opacity: 1;
+  opacity: 0;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+}
+.show-project-info{
+  opacity: 1;
 }
 
 .project-info h4 {
