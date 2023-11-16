@@ -811,6 +811,9 @@ Services
   background: black;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.85);
 }
+.service:hover .more{
+  color: white;
+}
 
 .service:hover p {
   color: white;
