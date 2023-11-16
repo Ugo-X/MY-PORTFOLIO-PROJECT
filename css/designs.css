@@ -685,7 +685,8 @@ About
 */
 /* section title added to globals */
 .about {
-  margin-top: -4rem;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
 }
 
 .about-title {
