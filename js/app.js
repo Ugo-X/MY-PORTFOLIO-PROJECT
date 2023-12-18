@@ -36,6 +36,7 @@ services.forEach(function (service) {
   const btn = service.querySelector(".more");
   btn.addEventListener("click", function () {
     // so when we click on this btn within the service article, the individual service should toggle the class show-text i.e remove the class show-text if it exists already or add it if it doesnt exist already.
+    // bacically the btn is a btn with the class of "more" within an individual service. so we are saying that when a button is clicked, if is not the particular button clicked, we want to remove the show text class from it.
     services.forEach(function (item) {
       if (item !== service) {
         item.classList.remove("show-text");
