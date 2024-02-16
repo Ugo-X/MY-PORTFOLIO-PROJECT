@@ -808,7 +808,7 @@ Services
 
 .service:hover {
   color: white;
-  background: var(--clr-grey-3);
+  background: var(--clr-grey-6);
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.85);
 }
 .service:hover .more{
